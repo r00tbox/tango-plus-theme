@@ -83,17 +83,17 @@ Semantic, and Ansi-Color faces are included.")
 
    ;; Faces defined in faces.el:
    `(default                        ((,class (:foreground ,black
-					      :background ,white))))
+					                                                :background ,white))))
    `(deemphasized                   ((,class (:foreground ,alum-4
-					      :background ,white))))
+					                                                :background ,white))))
    `(quote                          ((,class (:foreground ,alum-5
-					      :slant italic))))
+					                                                :slant italic))))
    ;; Skipping bold, italic, bold-italic, underline, fixed-pitch,
    ;; variable-pitch, shadow.
    `(link                           ((,class (:underline t
-					      :foreground ,blue-3))))
+					                                               :foreground ,blue-3))))
    `(link-visited                   ((,class (:underline t
-					      :foreground ,blue-2))))
+					                                               :foreground ,blue-2))))
    `(highlight                      ((,class (:background ,alum-1))))
    `(region                         ((,class (:background ,butter-1))))
    `(secondary-selection            ((,class (:background ,butter-2))))
@@ -101,9 +101,9 @@ Semantic, and Ansi-Color faces are included.")
    `(escape-glyph                   ((,class (:foreground ,red-3))))
    ;; Skipping `nobreak-space'.
    `(mode-line                      ((,class (:background ,alum-5
-					      :foreground ,alum-1))))
+					                                                :foreground ,alum-1))))
    `(mode-line-inactive             ((,class (:background ,alum-4
-					      :foreground ,alum-3))))
+					                                                :foreground ,alum-3))))
    ;; What `mode-line-highlight' and `mode-line-emphasis' used for?
    `(mode-line-buffer-id            ((,class (:weight bold))))
    `(header-line                    ((,class (:background ,alum-2))))
@@ -111,9 +111,9 @@ Semantic, and Ansi-Color faces are included.")
    ;; Skipping `window-divider', `window-divider-first-pixel' and
    ;; `window-divider-last-pixel'.
    `(minibuffer-prompt              ((,class (:weight bold
-					      :foreground ,blue-3))))
+					                                            :foreground ,blue-3))))
    `(fringe                         ((,class (:foreground ,alum-2
-					      :background ,white))))
+					                                                :background ,white))))
    ;; Skipping `scroll-bar', `border'.
    `(cursor                         ((,class (:inverse-video t))))
    ;; Skipping `mouse', `tool-bar', `menu'.
@@ -127,28 +127,27 @@ Semantic, and Ansi-Color faces are included.")
 
    ;; Faces in isearch.el:
    `(isearch                        ((,class (:foreground ,white
-					      :background ,cham-1))))
+					                                                :background ,cham-1))))
    ;; FIXME isearch-fail
    `(lazy-highlight                 ((,class (:background ,cham-0))))
 
    ;; Font lock faces.  Other faces are defined in based on them to
    ;; the extend possible.
    `(font-lock-comment-face         ((,class (:inherit deemphasized
-					      :slant italic))))
+					                                             :slant italic))))
    `(font-lock-comment-delimiter-face
-                                    ((,class (:inherit deemphasized
-                                              :slant italic))))
+     ((,class (:inherit deemphasized
+                        :slant italic))))
    `(font-lock-string-face          ((,class (:foreground ,choc-3
-					      :slant italic))))
+					                                                :slant italic))))
    `(font-lock-doc-face             ((,class (:inherit deemphasized))))
-   `(font-lock-keyword-face         ((,class (:foreground ,blue-3
-					      :weight light))))
+   `(font-lock-keyword-face         ((,class (:foreground ,blue-3))))
    `(font-lock-builtin-face         ((,class (:foreground ,plum-2))))
    `(font-lock-function-name-face   ((,class (:foreground ,red-3))))
    `(font-lock-variable-name-face   ((,class (:foreground ,red-3))))
    `(font-lock-type-face            ((,class (:foreground ,red-3))))
    `(font-lock-constant-face        ((,class (:foreground ,choc-3
-					      :slant italic))))
+					                                                :slant italic))))
    `(font-lock-warning-face         ((,class (:foreground ,red-3))))
    `(font-lock-negation-char-face   ((,class (:foreground ,red-3))))
    `(font-lock-preprocessor-face    ((,class (:inherit deemphasized))))
@@ -158,38 +157,38 @@ Semantic, and Ansi-Color faces are included.")
    ;; Highlighting faces
    `(sentence-highlight-face        ((,class (:inherit highlight))))
    `(evil-ex-substitute-matches     ((,class (:background ,red-0
-					      :strike-through ,red-1))))
+					                                                :strike-through ,red-1))))
    `(evil-ex-substitute-replacement ((,class (:inherit lazy-highlight))))
 
    ;; Gnus faces
    `(gnus-group-news-1              ((,class (:weight bold
-					      :foreground ,plum-3))))
+					                                            :foreground ,plum-3))))
    `(gnus-group-news-1-low          ((,class (:foreground ,plum-3))))
    `(gnus-group-news-2              ((,class (:weight bold
-					      :foreground ,blue-3))))
+					                                            :foreground ,blue-3))))
    `(gnus-group-news-2-low          ((,class (:foreground ,blue-3))))
    `(gnus-group-news-3              ((,class (:weight bold :foreground ,red-3))))
    `(gnus-group-news-3-low          ((,class (:foreground ,red-3))))
    `(gnus-group-news-4              ((,class (:weight bold
-					      :foreground ,"#7a4c02"))))
+					                                            :foreground ,"#7a4c02"))))
    `(gnus-group-news-4-low          ((,class (:foreground ,"#7a4c02"))))
    `(gnus-group-news-5              ((,class (:weight bold
-					      :foreground ,orange-3))))
+					                                            :foreground ,orange-3))))
    `(gnus-group-news-5-low          ((,class (:foreground ,orange-3))))
    `(gnus-group-news-low            ((,class (:foreground ,alum-4))))
    `(gnus-group-mail-1              ((,class (:weight bold
-					      :foreground ,plum-3))))
+					                                            :foreground ,plum-3))))
    `(gnus-group-mail-1-low          ((,class (:foreground ,plum-3))))
    `(gnus-group-mail-2              ((,class (:weight bold
-					      :foreground ,blue-3))))
+					                                            :foreground ,blue-3))))
    `(gnus-group-mail-2-low          ((,class (:foreground ,blue-3))))
    `(gnus-group-mail-3              ((,class (:weight bold
-					      :foreground ,cham-3))))
+					                                            :foreground ,cham-3))))
    `(gnus-group-mail-3-low          ((,class (:foreground ,cham-3))))
    `(gnus-group-mail-low            ((,class (:foreground ,alum-4))))
    `(gnus-header-content            ((,class (:foreground ,cham-3))))
    `(gnus-header-from               ((,class (:weight bold
-					      :foreground ,butter-3))))
+					                                            :foreground ,butter-3))))
    `(gnus-header-subject            ((,class (:foreground ,red-3))))
    `(gnus-header-name               ((,class (:foreground ,blue-3))))
    `(gnus-header-newsgroups         ((,class (:foreground ,alum-4))))
@@ -221,7 +220,7 @@ Semantic, and Ansi-Color faces are included.")
 
    ;; Flyspell
    `(flyspell-incorrect             ((,class (:underline (:color ,red-1 :style wave)
-					      :background ,red-0))))
+					                                               :background ,red-0))))
    `(flyspell-duplicate             ((,class (:inherit flyspell-incorrect))))
    ;; Wcheck
    `(wcheck-default-face            ((,class (:inherit flyspell-incorrect))))
@@ -230,13 +229,13 @@ Semantic, and Ansi-Color faces are included.")
    `(org-quote                      ((,class (:inherit quote))))
    `(org-verbatim                   ((,class (:inherit quote))))
    `(org-level-1                    ((,class (:inherit font-lock-keyword-face
-					      :height 1.3 :weight bold))))
-   `(org-level-2                    ((,class (:inherit font-lock-keyword-face))))
-   `(org-level-3                    ((,class (:inherit font-lock-keyword-face))))
-   `(org-level-4                    ((,class (:inherit font-lock-keyword-face))))
-   `(org-level-5                    ((,class (:inherit font-lock-keyword-face))))
-   `(org-level-6                    ((,class (:inherit font-lock-keyword-face))))
-   `(org-level-7                    ((,class (:inherit font-lock-keyword-face))))
+					                                             :height 1.1 :weight bold))))
+   `(org-level-2                    ((,class (:inherit font-lock-keyword-face :foreground ,plum-3))))
+   `(org-level-3                    ((,class (:inherit font-lock-keyword-face :foreground ,orange-3))))
+   `(org-level-4                    ((,class (:inherit font-lock-keyword-face :foreground ,cham-3))))
+   `(org-level-5                    ((,class (:inherit font-lock-keyword-face :foreground ,choc-3))))
+   `(org-level-6                    ((,class (:inherit font-lock-keyword-face :foreground ,butter-3))))
+   `(org-level-7                    ((,class (:inherit font-lock-keyword-face :foreground ,alum-6))))
    `(org-level-8                    ((,class (:inherit font-lock-keyword-face))))
    `(org-document-title             ((,class (:inherit font-lock-keyword-face :weight bold))))
    `(org-document-info              ((,class (:inherit font-lock-keyword-face))))
@@ -275,10 +274,10 @@ Semantic, and Ansi-Color faces are included.")
    ;; Mu4e
    `(mu4e-title-face                ((,class (:weight bold))))
    `(mu4e-unread-face               ((,class (:foreground ,blue-3
-					      :weight bold))))
+					                                                :weight bold))))
    `(mu4e-moved-face                ((,class (:inherit deemphasized))))
    `(mu4e-thrashed-face             ((,class (:inherit deemphasized
-					      :strike-through t))))
+					                                             :strike-through t))))
    `(mu4e-draft-face                ((,class (:inherit font-lock-string-face))))
    `(mu4e-flagged-face              ((,class (:foreground ,red-3 :weight bold))))
    `(mu4e-replied-face              ((,class (:inherit deemphasized))))
@@ -310,7 +309,7 @@ Semantic, and Ansi-Color faces are included.")
 
    ;; Helm
    `(helm-source-header             ((,class (:inherit default :weight bold
-                                              :height 1.3))))
+                                                       :height 1.3))))
    `(helm-selection                 ((,class (:inherit highlight))))
    `(helm-match                     ((,class (:inherit lazy-highlight))))
    `(helm-action                    ((,class ())))
@@ -318,7 +317,7 @@ Semantic, and Ansi-Color faces are included.")
    `(helm-swoop-target-word-face    ((,class (:inherit lazy-highlight))))
    `(helm-swoop-target-line-face    ((,class (:inherit highlight))))
    `(helm-swoop-target-line-block-face
-                                    ((,class (:inherit highlight))))
+     ((,class (:inherit highlight))))
 
    ;; Markdown mode
    `(markdown-italic-face           ((,class (:slant italic))))
@@ -327,7 +326,7 @@ Semantic, and Ansi-Color faces are included.")
    `(markdown-header-delimiter-face ((,class (:inherit font-lock-keyword-face))))
    `(markdown-header-face           ((,class (:inherit font-lock-keyword-face))))
    `(markdown-header-face-1         ((,class (:inherit markdown-header-face
-                                              :weight bold))))
+                                                       :weight bold))))
    `(markdown-header-face           ((,class (:inherit font-lock-keyword-face))))
    `(markdown-inline-code-face      ((,class (:slant italic))))
    `(markdown-list-face             ((,class (:weight bold))))
@@ -347,32 +346,32 @@ Semantic, and Ansi-Color faces are included.")
    ;; Semantic faces
    ;; FIXME This section.  When and where are these faces used?
    `(semantic-decoration-on-includes
-                                    ((,class (:underline  ,cham-4))))
+     ((,class (:underline  ,cham-4))))
    `(semantic-decoration-on-private-members-face
-                                    ((,class (:background ,alum-2))))
+     ((,class (:background ,alum-2))))
    `(semantic-decoration-on-protected-members-face
-                                    ((,class (:background ,alum-2))))
+     ((,class (:background ,alum-2))))
    `(semantic-decoration-on-unknown-includes
-                                    ((,class (:background ,choc-3))))
+     ((,class (:background ,choc-3))))
    `(semantic-decoration-on-unparsed-includes
-                                    ((,class (:underline  ,orange-3))))
+     ((,class (:underline  ,orange-3))))
    `(semantic-tag-boundary-face     ((,class (:overline   ,blue-1))))
    `(semantic-unmatched-syntax-face ((,class (:underline  ,red-1))))
 
    ;; Epresent:
    `(epresent-title-face            ((,class (:weight bold :height 360))))
    `(epresent-heading-face          ((,class (:weight bold :height 270
-					      :underline nil ))))
+					                                            :underline nil ))))
    `(epresent-subheading-face       ((,class (:weight bold :height 240))))
    `(epresent-author-face           ((,class (:height 1.6))))
    `(epresent-bullet-face           ((,class (:weight bold))))
    `(epresent-hidden-face           ((,class (:invisible t))))
 
-  ;; writegood-mode:
+   ;; writegood-mode:
    `(writegood-weasels-face         ((,class (:underline (:color ,red-1 :style wave)))))
    `(writegood-passive-voice-face   ((,class (:inherit writegood-weasels-face))))
    `(writegood-duplicates-face      ((,class (:inherit flyspell-duplicate))))
-   
+
    ;; anzu-mode:
    `(anzu-mode-line                 ((,class (:inherit mode-line))))
    )
@@ -380,7 +379,7 @@ Semantic, and Ansi-Color faces are included.")
   (custom-theme-set-variables
    'tango-plus
    `(ansi-color-names-vector [,alum-6 ,red-3 ,cham-3 ,butter-3
-				      ,blue-3 ,plum-3 ,blue-1 ,alum-1])))
+				                              ,blue-3 ,plum-3 ,blue-1 ,alum-1])))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
